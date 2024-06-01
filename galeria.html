@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Producción en clase: Pixar</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo The Fall of the House of Usher">
+            </a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="la-serie.html">La Serie</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="banda-sonora.html">Banda Sonora</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="datos-generales.html">Datos Generales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="principal">
+            <a class="example-image-link" href="images/u1.jpg" data-lightbox="Los Usher" data-title="Los Usher (de izq. a der.): Leo, Victorine Lafourcade,
+            Camille L’Espanaye, Roderick, Madeline, Frederick,
+            Tamerlane, Perry
+            ."><img class="example-image" src="images/u1_min.jpg" alt="Los Usher"/></a>
+
+            <a class="example-image-link" href="images/u2.jpg" data-lightbox="Los Usher" data-title="El cuervo: criatura recurrente en esta serie.
+            "><img class="example-image" src="images/u2_min.jpg" alt="El cuervo: criatura recurrente en esta serie.
+            "/></a>
+
+            <a class="example-image-link" href="images/u3.jpg" data-lightbox="Los Usher" data-title="Uno de los tantos (y tal vez,
+            con menos spoilers) pósters
+            oficiales de la serie.
+            
+            "><img class="example-image" src="images/u3_min.jpg" alt="Póster de la casa dentro de un reloj de arena.
+            "/></a>
+
+            <a class="example-image-link" href="images/u4.jpg" data-lightbox="Los Usher" data-title="Audiencia en el juicio a la empresa familiar de los Usher.
+            "><img class="example-image" src="images/u4_min.jpg" alt="Audiencia en el juicio a la empresa familiar de los Usher.
+            "/></a>
+
+            <a class="example-image-link" href="images/u5.jpg" data-lightbox="Los Usher" data-title="Roderick rindiéndole cuentas a Dupin.
+            "><img class="example-image" src="images/u5_min.jpg" alt="Roderick rindiéndole cuentas a Dupin.
+            "/></a>
+        </article>
+        <article class="secundario">
+
+        </article>
+    </section>
+    <footer>
+        <i class="fa fa-facebook redes" style="color: #FFD43B;"></i>
+        <i class="fa fa-twitter redes" style="color: #FFD43B;"></i>
+        <i class="fa fa-youtube redes" style="color: #FFD43B;"></i>
+        <i class="fa fa-instagram redes" style="color: #FFD43B;"></i>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
