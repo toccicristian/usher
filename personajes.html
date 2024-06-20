@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Tributo a Serie: The Fall of the House of Usher</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- <a href="index.html"><img src="images/logo.png" alt="Logo Usher"></a> -->
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <!-- <li><a href="index.html">Inicio</a></li> -->
+                <li><a class="selected-entry" href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <a href="index.html">
+            <article class="principal">
+<!--             
+            <div>
+                <img src="images/light_home_logo.png" alt="Lightyear logo">
+                <h2>La historia del origen de Buzz Lightyear y sus aventuras hasta el infinito y más allá.</h2>
+            </div> -->
+            </article>
+        </a>
+        <h1>GALERÍA</h1>
+        <article class="secundario">
+            <p> AÑADIR PERSONAJES!</p>
+
+        </article>
+    </section>
+    <footer>
+        <div class="redes">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <div class="copyright">
+            <p> © Realizado por Tocci, Cristian</p>
+        </div>
+        
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
