@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Producción en clase: Pixar</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="Logo Pixar"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="principal">
+            <div>
+                <img src="images/light_home_logo.png" alt="Lightyear logo">
+                <h2>La historia del origen de Buzz Lightyear y sus aventuras hasta el infinito y más allá.</h2>
+            </div>
+            </article>
+            <h1>CONTACTO</h1>
+            <article class="secundario">
+                <form class="form">
+                    <h3 class="contacto">ESCRIBINOS</h3>
+                    <input placeholder="nombre..."></input>
+                    <input placeholder="email..."></input>
+                    <input placeholder="mensaje..."></input>
+                    <button>Enviar</button>
+                    <div class="pie_contacto">
+                        <span class="fa fa-phone"></span> 054 11 5555 5555
+                        <span class="fa fa-envelope-o"></span> contacto@pixar.com
+                    </div>
+                </form>
+        </article>
+    </section>
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
