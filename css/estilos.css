@@ -51,6 +51,11 @@ a{
 	color: #000000;
 }
 .icon { display: none; }
+
+.selected-entry{
+	text-decoration: underline;
+}
+
 section{
 	max-width: 1300px;
 	width: 90%;
