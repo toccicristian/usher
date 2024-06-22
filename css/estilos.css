@@ -65,6 +65,51 @@ a{
 	text-decoration: none;
 	color: #000000;
 }
+
+
+
+.dropbtn{
+	cursor: pointer;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	top:35px;
+	background-color: var(--color-fondo);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;	
+}
+
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+
+.dropdown-content a:hover {
+	background-color: var(--color-frente)
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+  
+.dropdown:hover .dropbtn {
+	background-color: var(--color-frente);
+}
+
+
+
+
+
 .icon { display: none; }
 
 .selected-entry{
@@ -280,10 +325,6 @@ h1, article div a h4{
 }
 
 
-/*
-referencias
-*/
-
 
 
 .referencias{
@@ -312,11 +353,6 @@ referencias
 }
 
 
-
-
-/*
-fin referencias
-*/
 
 
 .secundario .example-image-link{
@@ -573,6 +609,12 @@ header nav {
 	color: white;
 	font-size:1.5em;
 }
+
+.dropdown:hover .dropdown-content {
+	display: none;
+}
+
+
 nav ul {
 	display: none;
 }
