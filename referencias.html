@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Tributo a Serie: The Fall of the House of Usher</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- <a href="index.html"><img src="images/logo.png" alt="Logo Usher"></a> -->
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a class="selected-entry" href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="top" name="top"></div>
+    <section>
+        <a href="index.html">
+            <article class="principal">
+<!--             
+            <div>
+                <img src="images/light_home_logo.png" alt="Lightyear logo">
+                <h2>La historia del origen de Buzz Lightyear y sus aventuras hasta el infinito y más allá.</h2>
+            </div> -->
+            </article>
+        </a>
+        <h1>REFERENCIAS</h1>
+        <article class="secundario referencias">
+
+            <section>
+                <p class="referencia-titulo">Nombres de Personajes:</p>
+                <p class="referencia-descripcion">
+                    <ul>
+                        <li>Roderick (Bruce Greenwood y Zach Gilford) y Madeline Usher (Mary McDonnell y Willa Fitzgerald): Los nombres provienen de los hermanos en "La caída de la casa de Usher", un cuento sobre una mansión espeluznante.
+                        </li>
+                        <li>Verna (Carla Gugino): El personaje está inspirado en el cuervo de "El cuervo", el poema narrativo de Poe, - nota que el nombre de Verna es un anagrama de la palabra cuervo.</li>
+                        <li>Auguste Dupin (Carl Lumbly): El nombre proviene del detective aficionado, C. Auguste Dupin, en las historias "Los crímenes de la calle Morgue", "La carta robada" y "El misterio de Marie Rogêt"; también representa al famoso narrador de "La caída de la casa de Usher".</li>
+                        <li>Arthur Pym (Mark Hamill): El fijo de la familia Usher con una historia previa muy movida recibe su nombre del personaje principal de la novela The Narrative of Arthur Gordon Pym of Nantucket.</li>
+                        <li>Frederick Usher (Henry Thomas): El nombre del hijo mayor de los Usher proviene de Frederick, Barón de Metzengerstein, el cruel heredero en el corazón de "Metzengerstein", el primer cuento de Poe en ser publicado.</li>
+                        <li>Morella “Morrie” Usher (Crystal Balint): La esposa de Frederick recibe su nombre del personaje titular de la historia "Morella".</li>
+                        <li>Lenore Usher (Kyliegh Curran): Este nombre que rima con "nevermore" proviene de "El cuervo".</li>
+                        <li>Tamerlane Usher (Samantha Sloyan): La influencer de estilo de vida recibe su nombre del poema "Tamerlane", en el que el personaje principal es un warlord con un corazón roto.</li>
+                        <li>William “Bill” T. Wilson (Matt Biedel): El esposo de fitness de Tamerlane recibe su nombre de la historia "William Wilson".</li>
+                        <li>Victorine Lafourcade (T’Nia Miller): El nombre completo de Vic proviene de la historia "El entierro prematuro" - un tema favorito de Poe.</li>
+                        <li>Camille L’Espanaye (Kate Siegel): La jefa de relaciones públicas sin escrúpulos de los Usher recibe su nombre de la historia "Los crímenes de la calle Morgue".</li>
+                        <li>Napoleon “Leo” Usher (Rahul Kohli): El influencer de juegos recibe su nombre de Napoleon Bonaparte Froissart, el joven narrador de la historia "Los anteojos" que aprende de la manera más difícil que no debe ser demasiado vanidoso para usar sus anteojos.</li>
+                        <li>Prospero “Perry” Usher (Sauriyan Sapkota): Este niño del club desafortunado recibe su nombre de la historia "La máscara de la muerte roja".</li>
+                        <li>Annabel Lee (Katie Parker): La primera esposa de Roderick recibe su nombre del poema "Annabel Lee" y simboliza el tema común del amor perdido en el trabajo de Poe.</li>
+                    </ul>
+
+                </p>
+
+            </section>
+                        
+        </article>
+    </section>
+    <button onclick="topFunction()" id="botonVolverArriba" title="Go to top"><img src="images/to-top-b.png" alt="volver arriba"></button> 
+    <footer>
+        <div class="redes">
+            <a href=""><img src="./images/redes/facebook-f-b.png" alt="link a x"></a>
+            <a href=""><img src="./images/redes/x-twitter-b.png" alt="link a x"></a>
+            <a href=""><img src="./images/redes/youtube-b.png" alt="link a x"></a>
+            <a href=""><img src="./images/redes/instagram-b.png" alt="link a x"></a>
+        </div>
+        <div class="copyright">
+            <p> © Realizado por Tocci, Cristian</p>
+        </div>  
+    </footer>
+    <script src="js/volverArriba.js"></script> 
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
