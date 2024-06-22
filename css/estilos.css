@@ -154,8 +154,30 @@ h1, article div a h4{
 	justify-content: space-around;
 }
 
+.elenco section{
+	display: block;
+	margin: auto;
+	width:80%;
+}
 
+.elenco section ul{;
+	list-style-type: none;
+}
 
+.elenco section ul li{
+	color: white;
+	margin: 1rem 0;
+}
+
+.elenco section ul li::first-letter{
+	font-size: 2rem;
+	font-weight: bold;
+	margin-right: 0.05rem;
+}
+
+.ost section{
+	color: white;
+}
 
 .adaptaciones{
 	display: flex;

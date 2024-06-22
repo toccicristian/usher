@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link href="css/lightbox.css" rel="stylesheet" />
     <title>Tributo a Serie: The Fall of the House of Usher</title>
 </head>
 <body>
@@ -24,12 +24,12 @@
         <nav id="menu_bar" class="">
             <ul>
                 <li class="dropdown">
-                    <a class="dropbtn selected-entry" href="index.html">
+                    <a class="dropbtn" href="index.html">
                     Inicio
                     </a>
                     <div class="dropdown-content">
                         <a href="./elenco.html">Elenco</a>
-                        <a href="./ost.html">Ost</a>
+                        <a class="selected-entry" href="./ost.html">Ost</a>
                     </div>        
                 </li>
                 <li><a href="personajes.html">Personajes</a></li>
@@ -41,45 +41,46 @@
     </header>
     <div id="top" name="top"></div>
     <section>
-        <article class="principal">
-            <!-- <div id="teaser-contenedor">
-                <video id="teaser" src="./images/usherTeaser.mp4" width="100%" autoplay="true" onended="ocultarFunction()"></video>
-
+        <a href="index.html">
+            <article class="principal">
+            <!--             
+            <div>
+            
             </div> -->
-        </article>
-        <h1>CURIOSIDADES DE LA CAÍDA DE LA CASA DE USHER</h1>
-        <article class="secundario">
-            <div>
-                <a href="./adaptaciones.html">
-                    <img src="images/image-asset.jpg" alt="">
-                    <h4>Otras Adaptaciones</h4>
-                </a>
-            </div>
-            <div>
-                <a href="https://biblioteca.org.ar/libros/157278.pdf" target="_blank">
-                    <img src="images/image-asset2.jpg" alt="">
-                    <h4>La Obra Original</h4>
-                </a>
-            </div>
-            <div>
-                <a href="./referencias.html">
-                    <img src="images/image-asset3.jpg" alt="">
-                    <h4>Referencias</h4>
-                </a>
-            </div>
+            </article>
+        </a>
+        <h1>OST (en construccion)</h1>
+        <article class="secundario ost">
+
+            <section>
+                <ul>
+                    <li>Episodio 1: ‘Una lúgubre medianoche’
+                        <ul>
+                            <li>Another Brick In the Wall, Pt. 2 – Pink Floyd</li>
+                            <li>Symphony No.7 in A Major, Op.92: II. Allegretto – Royal Philarmonic Orchestra & Barry Wordsworth</li>
+                            <li>New York Groove – Ace Frehley</li>
+                            <li>Double Vision – Foreigner</li>
+                            <li>Sinfonía nº 7 en la mayor, Op. 92: II. Allegretto – Royal Philharmonic Orchestra</li>
+                        </ul>
+
+                    </li>                        
+                </ul>
+
+            </section>
+                        
         </article>
     </section>
     <button onclick="topFunction()" id="botonVolverArriba" title="Go to top"><img src="images/to-top-b.png" alt="volver arriba"></button> 
     <footer>
         <div class="redes">
-            <a class="redesHome" href=""><img src="./images/redes/facebook-f-b.png" alt="link a x"></a>
-            <a class="redesHome" href=""><img src="./images/redes/x-twitter-b.png" alt="link a x"></a>
-            <a class="redesHome" href=""><img src="./images/redes/youtube-b.png" alt="link a x"></a>
-            <a class="redesHome" href=""><img src="./images/redes/instagram-b.png" alt="link a x"></a>
+            <a href=""><img src="./images/redes/facebook-f-b.png" alt="link a x"></a>
+            <a href=""><img src="./images/redes/x-twitter-b.png" alt="link a x"></a>
+            <a href=""><img src="./images/redes/youtube-b.png" alt="link a x"></a>
+            <a href=""><img src="./images/redes/instagram-b.png" alt="link a x"></a>
         </div>
         <div class="copyright">
             <p> © Realizado por Tocci, Cristian</p>
-        </div>
+        </div>  
     </footer>
     <script src="js/volverArriba.js"></script> 
     <script type="text/javascript">
@@ -91,7 +92,7 @@
             x.className = "";
           }
         }
-        
     </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
