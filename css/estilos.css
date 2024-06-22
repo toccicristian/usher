@@ -13,8 +13,7 @@ html{
 	box-sizing: border-box;
 }
 body{
-	/* background-color: var(--color-fondo); */
-	background-image: linear-gradient(var(--color-fondo) 0%,black 35%, black 85%, rgb(255,60,0));
+	background-image: linear-gradient(var(--color-fondo) 0%,black 75%, black 95%, rgb(125,32,0));
 	font-family: 'Amarante', sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -31,7 +30,6 @@ header{
 	padding-bottom: 2%;
 	padding-left: 7%;
 	display: flex;
-	/* justify-content: space-between; */
 	justify-content: space-around;
 }
 
@@ -59,11 +57,8 @@ nav ul li a{
 	transition: 1.3s
 }
 nav ul li a:hover{
-	/* text-decoration: underline; */
-	/* font-weight: 800; */
 	color: white;
 	background-color: var(--color-frente);
-	/* font-family: "Nosifer"; */
 	transition: 0.8s;
 }
 a{
@@ -77,7 +72,7 @@ a{
 }
 
 section{
-	max-width: 1300px;
+	max-width: 100%;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -89,11 +84,11 @@ section article div{
 }
 .principal{
 	width: 100%;
-	/* height: 650px; */
 	height: 50vw;
 	background-image: url(../images/houseHeader.jpg);
-	background-size: contain;
+	background-size:cover;
 	background-repeat: no-repeat;
+	background-position: center;;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -107,39 +102,78 @@ h1, article div a h4{
 	color: #ffffff;
 }
 
-/* section article div#poster{
-	display: block;
-	z-index: 1;
-	position:relative;
-	background-image: url(../images/houseHeader.jpg);
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-
-}
-
-section article div#teaser-contenedor{
-	display: block;
-	z-index: 2;
-	position: absolute;
-} */
-
 .secundario{
-	/* margin:auto; */
 	margin-top: 5%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
+.personajes{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	width: 80%;
+	margin: auto;
+	margin-top: 3rem;
+	padding: 0px 25px;
+	box-shadow: 0.1rem 0.1rem 0.2rem 0 rgb(0 0 0 / 40%);
+  	font-size: 1.125rem;
+  	min-height: 375px;
+  	border-width: 1px;
+  	border-style: solid;
+}
+
+.personajes section{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	width:100%;
+	margin: 2em 0;
+}
+
+.personajes section:nth-last-of-type(odd){
+	display: flex;
+
+}
+
+.personajes section:nth-last-of-type(even){
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+
+.personajes section *{
+	margin: 1rem;	
+}
+
+.personajes section img{
+	display: inline-block;
+	min-width:400px;
+	width: 40%;
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.personajes section p::first-letter {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-right: 0.05rem;
+  }
+  
+
+.personajes section p{
+	display: inline-block;
+	color: var(--color-frente);
+	min-width:300px;
+	width:40%;
+	text-shadow: black 1px 0 10px;
+}
+
 .secundario .example-image-link{
-	/* border-style: solid;
-	border-width: 15px;
-	border-image: radial-gradient(var(--color-fondo),var(--color-frente)) 50; */
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.8);
 	transition: transform 0.3s ease-in-out;
-	margin: 3em auto;
+	margin: 3em 1em;
 }
 
 .secundario a:hover{
@@ -158,9 +192,6 @@ section article div#teaser-contenedor{
 .secundario div a img{
 	width: 100%;
 	margin-bottom: 2rem;
-	/* border-style: solid;
-	border-width: 15px;
-	border-image: radial-gradient(var(--color-fondo),var(--color-frente)) 50; */
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.8);
 	transition: transform 0.3s ease-in-out;
 	
@@ -193,7 +224,6 @@ h1{
 .form{
 	width:100%;
 	height:440px;
-	/* background:#e6e6e6; */
 	background:var(--color-frente);
 	border-radius:8px;
 	box-shadow:0 0 40px -10px #000;
@@ -209,9 +239,7 @@ h3.contacto{
 	margin:10px 0;
 	padding-bottom:10px;
 	width:150px;
-	/* color:#78788c; */
 	color:var(--color-fondo);
-	/* border-bottom:3px solid #78788c; */
 	border-bottom:3px solid var(--color-fondo);
 	font-size: large;
 }
@@ -226,7 +254,6 @@ input{
 	resize:none;
 	border:0;
 	transition:all .3s;
-	/* border-bottom:2px solid #bebed2; */
 	border-bottom:2px solid var(--color-fondo);
 }
 
@@ -237,18 +264,14 @@ input:focus{
 button{
 	padding:8px 12px;
 	margin:50px 0 0;
-	/* border:2px solid #78788c; */
 	border:2px solid var(--color-fondo);
 	background:0;
-	/* color:#5a5a6e; */
 	color:var(--color-fondo);
 	cursor:pointer;
 	transition:all .3s;
 }
 
 button:hover{
-	/* background:#78788c;
-	color:#fff; */
 	background:var(--color-fondo);
 	color:var(--color-frente);
 }
@@ -256,7 +279,6 @@ button:hover{
 div.pie_contacto{
 	position:absolute;
 	bottom:-15px;
-	/* right:30%; */
 	right:20vw;
 	background:#50505a;
 	background:var(--color-fondo);
@@ -280,7 +302,7 @@ div.pie_contacto span{
 	z-index: 99; 
 	border: none; 
 	outline: none; 
-	background-color: red; 
+	background-color: rgb(174, 2, 2); 
 	color: white; 
 	cursor: pointer; 
 	padding: 15px; 
@@ -288,9 +310,9 @@ div.pie_contacto span{
 	font-size: 18px; 
   }
   
-  #botonVolverArriba:hover {
+  /* #botonVolverArriba:hover {
 	background-color: #555; 
-  }
+  } */
 
 
 footer{
@@ -323,31 +345,13 @@ footer div.redes img:hover{
 	display: none;
 }
 
-/* @media (max-width: 1280px){
-	.principal{
-		width: 100%;
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-}
-
-@media (max-width: 800px){
-	.principal{
-		width: 100%;
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-}
 
 @media (max-width: 640px){
-	.principal{
-		width: 100%;
-		background-size: contain;
-		background-repeat: no-repeat;
+	.personajes{
+		box-shadow: none;
+		border-style: none;
 	}
-} */
-
-
+}
 
 @media (max-width: 480px) { 
 header{
@@ -400,11 +404,61 @@ section{
 	background-size:contain;
 	background-repeat:no-repeat;
 	padding: 10%;
+
 }
 .secundario{
 	margin-top: 1%;
 	justify-content: space-around;
 }
+
+section{
+	max-width: 100%;
+	width:100%;
+}
+
+.personajes{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;;
+	width: 100%;
+	margin: auto;
+	margin-top: 3rem;
+	padding: 0px 25px;
+  	font-size: 1.125rem;
+  	min-height: 375px;
+}
+
+.personajes section:nth-last-of-type(odd), .personajes section:nth-last-of-type(even){
+	display:block;
+	flex-direction: column;
+	width:100%;
+}
+
+
+.personajes section img{
+	min-width:0;
+	width: 90%;
+}
+
+
+.personajes section p::first-letter {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-right: 0.07rem;
+  }
+  
+
+.personajes section p{
+	display: block;
+	color: var(--color-frente);
+	min-width: 0;
+	width:80%;
+	margin:auto;
+	text-shadow: black 1px 0 10px;
+}
+
+
+
 
 .secundario div{
 	margin-right: auto;
@@ -412,12 +466,7 @@ section{
 	width: 90%;
 }
 .secundario div a img{
-	
 	margin: 1rem 0 2rem 0;
-	/* border-style: solid;
-	border-width: 15px;
-	border-image: radial-gradient(var(--color-fondo),var(--color-frente)) 50;
-	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.8); */
 }
 
 .secundario .example-image-link{
