@@ -233,6 +233,8 @@ h1, article div a h4{
 	text-shadow: black 1px 0 10px;
 }
 
+
+
 .resenas{
 	display:flex;
 	flex-wrap:wrap;
@@ -277,6 +279,7 @@ h1, article div a h4{
 	
 }
 
+
 .secundario .example-image-link{
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.8);
 	transition: transform 0.3s ease-in-out;
@@ -306,6 +309,13 @@ h1, article div a h4{
 
 .secundario div a img:hover{
 	transform: scale(1.1);
+}
+
+.secundario div video{
+	width: 100%;
+	margin-bottom: 2rem;
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.8);
+	transition: transform 0.3s ease-in-out;
 }
 
 h4{
