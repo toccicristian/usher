@@ -175,6 +175,9 @@ h1, article div a h4{
 	margin-right: 0.05rem;
 }
 
+.ost section{
+	color: white;
+}
 
 .adaptaciones{
 	display: flex;
