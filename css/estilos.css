@@ -41,6 +41,11 @@ section h1{
 	margin: 5% 10% 0 10%;
 }
 
+#menu_bar{
+	margin: auto;
+}
+
+
 nav ul{
 	margin-top: 3%;
 }
@@ -56,6 +61,7 @@ nav ul li a{
 	color: white;
 	transition: 1.3s
 }
+
 nav ul li a:hover{
 	color: white;
 	background-color: var(--color-frente);
@@ -130,7 +136,6 @@ section article div{
 .principal{
 	width: 100%;
 	height: 50vw;
-	background-image: url(../images/houseHeader.jpg);
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;;
@@ -139,8 +144,48 @@ section article div{
 	align-items: center;
 	color: #ffffff;
 }
+
+.principal#principal{
+	background-image: url(../images/usher-home.jpg);
+}
+
+.principal#elenco{
+	background-image: url(../images/usher-elenco.jpg);
+}
+
+.principal#personajes{
+	background-image: url(../images/usher-personajes.jpg);
+}
+
+.principal#galeria{
+	background-image: url(../images/usher-galeria.jpg);
+}
+
+.principal#resenas{
+	background-image: url(../images/usher-resenas.jpg);
+}
+
+.principal#contacto{
+	background-image: url(../images/usher-contacto.jpg);
+}
+
+.principal#adaptaciones{
+	background-image: url(../images/usher-adaptaciones.jpg);
+}
+
+.principal#referencias{
+	background-image: url(../images/usher-referencias.jpg);
+}
+
+.principal#ost{
+	background-image:url(../images/usher-ost.jpg);
+}
+
 .principal div img{
-	width: 70%;
+	display:block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h1, article div a h4{
@@ -379,8 +424,12 @@ h1, article div a h4{
 
 .secundario .example-image-link{
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.8);
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
 	margin: 3em 1em;
+}
+
+.secundario .example-image-link:hover{
+	box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.2);
 }
 
 .secundario a:hover{
@@ -400,12 +449,12 @@ h1, article div a h4{
 	width: 100%;
 	margin-bottom: 2rem;
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.8);
-	transition: transform 0.3s ease-in-out;
-	
+	transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-out;	
 }
 
 .secundario div a img:hover{
 	transform: scale(1.1);
+	box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.2);
 }
 
 
@@ -430,7 +479,8 @@ h1{
 	margin-top: 1.5rem;
 }
 .form{
-	width:100%;
+	width:40%;
+	min-width:300px;
 	height:440px;
 	background:var(--color-frente);
 	border-radius:8px;
@@ -487,11 +537,14 @@ button:hover{
 div.pie_contacto{
 	position:absolute;
 	bottom:-15px;
-	right:20vw;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
 	background:#50505a;
 	background:var(--color-fondo);
 	color:#fff;
-	width:50vw;
+	width:20vw;
 	min-width:300px;
 	padding:16px 4px 16px 0;
 	border-radius:6px;
@@ -500,6 +553,22 @@ div.pie_contacto{
 
 div.pie_contacto span{
 	margin:0 5px 0 15px;
+}
+
+.secundario aside{
+	width:30vw;
+	min-width:300px;
+	margin:calc(1vh) auto;
+	margin-top:5vh;
+	margin-bottom:5vh;
+	/* margin-left:5vh;
+	margin-right:5vh; */
+	align-self: center;
+}
+
+.secundario aside img{
+	width: 100%;
+	border-radius: 15px;
 }
 
 #botonVolverArriba {
