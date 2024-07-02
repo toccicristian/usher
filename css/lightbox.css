@@ -32,7 +32,13 @@ body.lb-disable-scrolling {
   border-radius: 3px;
 
   /* Image border */
-  border: 4px solid white;
+  /* border: 4px solid white; */
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(    
+    white, 
+    #1E6672
+  ) 1 100%;
 }
 
 a img {
@@ -54,7 +60,8 @@ a img {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  /* background-color: white; */
+  background-color: #1E6672;
 }
 
 .lb-outerContainer:after {
@@ -75,8 +82,10 @@ a img {
 
 .lb-cancel {
   display: block;
-  width: 32px;
-  height: 32px;
+  /* width: 32px;
+  height: 32px; */
+  width:128px;
+  height:128px;
   margin: 0 auto;
   background: url(../images/loading.gif) no-repeat;
 }
@@ -189,8 +198,10 @@ a img {
 .lb-data .lb-close {
   display: block;
   float: right;
-  width: 30px;
-  height: 30px;
+  /* width: 30px;
+  height: 30px; */
+  width: 75px;
+  height: 71px;
   background: url(../images/close.png) top right no-repeat;
   text-align: right;
   outline: none;
