@@ -296,6 +296,12 @@ h1, article div a h4{
 	color: white;
 }
 
+.ost section ul{
+	margin-top:0.5em;
+	margin-bottom:1.5em;
+}
+
+
 .adaptaciones{
 	display: flex;
 	flex-direction: row;
@@ -507,6 +513,9 @@ section .resenas div .logo-rottentomatoes{
 	margin:1rem 0;
 }
 
+.ost section{
+	margin-left:2em;
+}
 
 
 
@@ -730,11 +739,11 @@ footer div.redes img:hover{
 		margin-top: 5rem;
 		padding: 0px 25px;
 	}
-	.resenas section:nth-last-of-type(even), .resenas section:nth-last-of-type(odd){ 
+	/* .resenas section:nth-last-of-type(even), .resenas section:nth-last-of-type(odd){ 
 		width: 80%;
 		margin: 0 10%;
 		flex-direction: column;
-	}
+	} */
 
 	.resenas section p:hover{
 		transform: scale(1.2);
@@ -903,7 +912,6 @@ section{
 .form{
 	width:100%;
 	height:440px;
-	/* background:var(--color-frente); */
 	background-image:url(../images/usher-formulario.jpg);
 	background-repeat:repeat;
 	background-size:contain;
@@ -915,8 +923,16 @@ section{
 	font-family:'Montserrat',sans-serif;
 	font-size: 14px;
 	position:relative;
-	/* min-width:335px; */
 }
+
+::placeholder{
+	color:#0f3545;
+	opacity:1;
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+	color: #0f3545;
+  }
 
 div.pie_contacto{
 	position:static;
