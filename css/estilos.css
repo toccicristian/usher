@@ -251,10 +251,30 @@ h1, article div a h4{
 	justify-content: space-around;
 }
 
+.dosColumnas{
+	display:inline-flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	width:100%;
+	justify-content: center;
+	align-items:flex-start;
+}
+
+.dosColumnas ul{
+	display: inline-flex;
+	flex-direction: column;
+	flex-basis:45%;
+}
+
+.dosColumnas ul li{
+	width: 100%;
+}
+
 .elenco section{
-	display: block;
-	margin: auto;
-	width:80%;
+	/* display: block; */
+	/* display:inline-flex; */
+	/* margin: auto; */
+	width:90%;
 }
 
 .elenco section ul{
@@ -398,14 +418,20 @@ h1, article div a h4{
 }
 
 
+.secundario.resenas{
+
+	/* background-color:red; */
+	margin:auto;
+}
 
 .resenas{
 	display:flex;
 	flex-wrap:wrap;
 	flex-direction:row;
-	justify-content:center;
-	width: 60%;
+	justify-content:space-between;
+	width: 90%;
 	margin: auto;
+	margin: 0 0;
 	margin-top: 5rem;
 	padding: 0px 25px;
 	color:white;
@@ -415,34 +441,44 @@ h1, article div a h4{
 }
 
 
+/* 
 .resenas section:nth-last-of-type(even), .resenas section:nth-last-of-type(odd){
 	display: flex;
 	margin: 0 10%;
 }
 .resenas section:nth-last-of-type(even){
 	flex-direction: row-reverse;
-}
+} */
 
 
-.resenas section p{
+section .resenas p{
 	margin:1rem 1rem;
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 }
 
-.resenas section p:hover{
-	transform: scale(1.8);
+section .resenas p:hover{
+	transform: scale(1.2);
 }
 
-.resenas section p .fuente{
+section .resenas p .fuente{
 	color:var(--color-frente);
 	text-shadow: white 0px 0 0px;
 }
 
 .resena{
-	width: 30%;
-	
+	width: 45%;	
 }
 
+section .resenas div .logo-rottentomatoes{
+	background-image:url(../images/criticaRottenTomatoes.png);
+	background-repeat:no-repeat;
+
+}
+
+.flotar-izquierda{
+	background-color:white;
+	
+}
 
 
 
@@ -679,6 +715,11 @@ footer div.redes img:hover{
 
 
 @media (max-width: 1024px){
+
+		.dosColumnas ul{
+		flex-basis:100%;
+	}	
+
 	.resenas{
 		display:flex;
 		flex-wrap:wrap;
