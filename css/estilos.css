@@ -296,6 +296,11 @@ h1, article div a h4{
 	color: white;
 }
 
+.ost section ul{
+	margin-top:0.5em;
+	margin-bottom:1.5em;
+}
+
 .adaptaciones{
 	display: flex;
 	flex-direction: row;
@@ -507,6 +512,9 @@ section .resenas div .logo-rottentomatoes{
 	margin:1rem 0;
 }
 
+.ost section{
+	margin-left:2em;
+}
 
 
 
